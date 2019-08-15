@@ -1,12 +1,11 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using GCD;
 
 namespace Tests
 {
-    [TestClass]
     public class GCDTests
     {
-        [TestMethod]
+        [Test]
         public void EuclidTest()
         {
             Assert.AreEqual(Euclid.GCD(-6, 18, 42), 6);
@@ -15,7 +14,7 @@ namespace Tests
             Assert.AreEqual(Euclid.GCD(30, 18), 6);
         }
 
-        [TestMethod]
+        [Test]
         public void SteinTest()
         {
             Assert.AreEqual(Stein.GCD(-6, 18, 42), 6);
