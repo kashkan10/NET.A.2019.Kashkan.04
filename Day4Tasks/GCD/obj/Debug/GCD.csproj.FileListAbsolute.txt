@@ -1,0 +1,6 @@
+C:\Users\Tanya\source\repos\Day4Tasks\GCD\bin\Debug\GCD.dll
+C:\Users\Tanya\source\repos\Day4Tasks\GCD\bin\Debug\GCD.pdb
+C:\Users\Tanya\source\repos\Day4Tasks\GCD\obj\Debug\GCD.csprojAssemblyReference.cache
+C:\Users\Tanya\source\repos\Day4Tasks\GCD\obj\Debug\GCD.csproj.CoreCompileInputs.cache
+C:\Users\Tanya\source\repos\Day4Tasks\GCD\obj\Debug\GCD.dll
+C:\Users\Tanya\source\repos\Day4Tasks\GCD\obj\Debug\GCD.pdb
