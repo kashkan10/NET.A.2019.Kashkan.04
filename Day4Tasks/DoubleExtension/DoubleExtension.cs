@@ -44,12 +44,10 @@ namespace DoubleExtension
             d = GetNormalize(d, ref count);
 
             double right = d % 1;
-            double left = d - right;
-            string firstMantissaPart = GetLeftBin(left);
-            string secondMantissaPart = GetRightBin(right, firstMantissaPart.Length);
-            string exponent = GetExponent(1023 + count + firstMantissaPart.Length);
+            string mantissa = GetMantissa(right);
+            string exponent = GetExponent(1023 + count);
 
-            return sign + exponent + firstMantissaPart + secondMantissaPart;
+            return sign + exponent + mantissa;
         }
         /// <summary>
         /// Normalization of source number
@@ -64,7 +62,7 @@ namespace DoubleExtension
                 num *= 2;
                 count--;
             }
-            while (num > 9)
+            while (num >= 2)
             {
                 num /= 2;
                 count++;
@@ -97,36 +95,19 @@ namespace DoubleExtension
         /// Determine the sign of the number
         /// </summary>
         /// <param name="num">Source number</param>
-        /// <returns>Returns the exponent</returns>
+        /// <returns>Returns the first sign</returns>
         private static char GetSign(double num)
         {
             return num < 0 ? '1' : '0';
         }
         /// <summary>
-        /// Calculation of the first mantissa part
+        /// Calculation of the mantissa 
         /// </summary>
         /// <param name="num"></param>
-        /// <returns>Returns first part of mantissa</returns>
-        private static string GetLeftBin(double num)
+        /// <returns>Returns the mantissa</returns>
+        private static string GetMantissa(double num)
         {
-            StringBuilder result = new StringBuilder();
-            while (num > 0)
-            {
-                result.Insert(0, num % 2);
-                num = num / 2 - (num / 2 % 1);
-            }
-
-            return result.ToString().Remove(0, 1);
-        }
-        /// <summary>
-        /// Calculation of the second mantissa part
-        /// </summary>
-        /// <param name="num"></param>
-        /// <param name="leng">The length of first mantissa part</param>
-        /// <returns>Returns second part of mantissa</returns>
-        private static string GetRightBin(double num, int leng)
-        {
-            char[] arr = new char[52 - leng];
+            char[] arr = new char[52];
             int i = 0;
             while (i < arr.Length)
             {
