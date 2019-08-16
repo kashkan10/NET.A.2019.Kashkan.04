@@ -5790,11 +5790,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tanya\\source\\repos\\Day4Tasks\\Tests\\Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Tanya\\Documents\\GitHub\\NET.A.2019.Kashkan.04\\Day4Tasks\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\Tanya\\source\\repos\\Day4Tasks\\Tests\\Tests.csproj",
+      "projectPath": "C:\\Users\\Tanya\\Documents\\GitHub\\NET.A.2019.Kashkan.04\\Day4Tasks\\Tests\\Tests.csproj",
       "packagesPath": "C:\\Users\\Tanya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tanya\\source\\repos\\Day4Tasks\\Tests\\obj\\",
+      "outputPath": "C:\\Users\\Tanya\\Documents\\GitHub\\NET.A.2019.Kashkan.04\\Day4Tasks\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5813,11 +5813,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Tanya\\source\\repos\\Day4Tasks\\DoubleExtension\\DoubleExtension.csproj": {
-              "projectPath": "C:\\Users\\Tanya\\source\\repos\\Day4Tasks\\DoubleExtension\\DoubleExtension.csproj"
+            "C:\\Users\\Tanya\\Documents\\GitHub\\NET.A.2019.Kashkan.04\\Day4Tasks\\DoubleExtension\\DoubleExtension.csproj": {
+              "projectPath": "C:\\Users\\Tanya\\Documents\\GitHub\\NET.A.2019.Kashkan.04\\Day4Tasks\\DoubleExtension\\DoubleExtension.csproj"
             },
-            "C:\\Users\\Tanya\\source\\repos\\Day4Tasks\\GCD\\GCD.csproj": {
-              "projectPath": "C:\\Users\\Tanya\\source\\repos\\Day4Tasks\\GCD\\GCD.csproj"
+            "C:\\Users\\Tanya\\Documents\\GitHub\\NET.A.2019.Kashkan.04\\Day4Tasks\\GCD\\GCD.csproj": {
+              "projectPath": "C:\\Users\\Tanya\\Documents\\GitHub\\NET.A.2019.Kashkan.04\\Day4Tasks\\GCD\\GCD.csproj"
             }
           }
         }

@@ -12,9 +12,9 @@ namespace DoubleExtension
         /// <returns>String representation</returns>
         public static string DoubleToBin(this double d)
         {
-            if (double.IsInfinity(d) || double.IsNaN(d))
+            if (double.IsInfinity(d))
             {
-                if (double.IsNegativeInfinity(d) || double.IsNaN(d))
+                if (double.IsNegativeInfinity(d))
                 {
                     return new string('1', 12) + new string('0', 52);
                 }
@@ -22,6 +22,11 @@ namespace DoubleExtension
                 {
                     return 0 + new string('1', 11) + new string('0', 52);
                 }
+            }
+
+            if (double.IsNaN(d))
+            {
+                return new string('1', 13) + new string('0', 51);
             }
 
             if (d == 0)
@@ -33,22 +38,58 @@ namespace DoubleExtension
                 else return new string('0', 64);
             }
 
-            if (d == double.Epsilon)
-            {
-                return new string('0', 63) + 1;
-            }
-
             char sign = GetSign(d);
             d = Math.Abs(d);
-            int count = 0;
-            d = GetNormalize(d, ref count);
+            int exponentPart = 0;
+            double copyOfSource = d;
+            d = GetNormalize(d, ref exponentPart);
+
+            if (Math.Abs(exponentPart) > 1023)
+            {
+                exponentPart = Math.Abs(exponentPart) - 1023;
+                return sign + GetExponent(0) + GetDenormMantissa(copyOfSource, exponentPart);
+            }
 
             double right = d % 1;
             string mantissa = GetMantissa(right);
-            string exponent = GetExponent(1023 + count);
+            string exponent = GetExponent(1023 + exponentPart);
 
             return sign + exponent + mantissa;
         }
+
+        /// <summary>
+        /// Mantissa for the denormal number
+        /// </summary>
+        /// <param name="num">Source number</param>
+        /// <param name="count">Abs exponent value</param>
+        /// <returns>Normalized number</returns>
+        private static string GetDenormMantissa(double num, int count)
+        {
+            StringBuilder tempResult = new StringBuilder();
+            while (true)
+            {
+                if (num == 0)
+                {
+                    break;
+                }
+
+                num *= 2;
+                if (num < 1)
+                {
+                    tempResult.Insert(tempResult.Length, '0');
+                }
+                else
+                {
+                    tempResult.Insert(tempResult.Length, '1');
+                    num -= 1;
+                }
+            }
+
+            string result = tempResult.ToString();
+            result = result.Remove(0, result.IndexOf('1'));
+            return new string('0', count) + tempResult + new string('0', 52 - tempResult.Length - count);
+        }
+
         /// <summary>
         /// Normalization of source number
         /// </summary>
@@ -70,6 +111,7 @@ namespace DoubleExtension
 
             return num;
         }
+
         /// <summary>
         /// Get the exponent in bin
         /// </summary>
@@ -77,7 +119,6 @@ namespace DoubleExtension
         /// <returns>Returns the exponent</returns>
         private static string GetExponent(int bias)
         {
-            Console.WriteLine(bias);
             StringBuilder result = new StringBuilder();
 
             while (bias > 0)
@@ -91,6 +132,7 @@ namespace DoubleExtension
             }
             return result.ToString();
         }
+
         /// <summary>
         /// Determine the sign of the number
         /// </summary>
@@ -100,6 +142,7 @@ namespace DoubleExtension
         {
             return num < 0 ? '1' : '0';
         }
+
         /// <summary>
         /// Calculation of the mantissa 
         /// </summary>

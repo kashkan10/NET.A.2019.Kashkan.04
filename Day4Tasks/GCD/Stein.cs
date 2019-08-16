@@ -26,6 +26,7 @@ namespace GCD
 
             return a;
         }
+
         /// <summary>
         /// Stein's algorithm for two numbers
         /// </summary>

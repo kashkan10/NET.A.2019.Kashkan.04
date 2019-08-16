@@ -4,3 +4,9 @@ C:\Users\Tanya\source\repos\Day4Tasks\DoubleExtension\obj\Debug\DoubleExtension.
 C:\Users\Tanya\source\repos\Day4Tasks\DoubleExtension\obj\Debug\DoubleExtension.csproj.CoreCompileInputs.cache
 C:\Users\Tanya\source\repos\Day4Tasks\DoubleExtension\obj\Debug\DoubleExtension.dll
 C:\Users\Tanya\source\repos\Day4Tasks\DoubleExtension\obj\Debug\DoubleExtension.pdb
+C:\Users\Tanya\Documents\GitHub\NET.A.2019.Kashkan.04\Day4Tasks\DoubleExtension\bin\Debug\DoubleExtension.dll
+C:\Users\Tanya\Documents\GitHub\NET.A.2019.Kashkan.04\Day4Tasks\DoubleExtension\bin\Debug\DoubleExtension.pdb
+C:\Users\Tanya\Documents\GitHub\NET.A.2019.Kashkan.04\Day4Tasks\DoubleExtension\obj\Debug\DoubleExtension.csprojAssemblyReference.cache
+C:\Users\Tanya\Documents\GitHub\NET.A.2019.Kashkan.04\Day4Tasks\DoubleExtension\obj\Debug\DoubleExtension.csproj.CoreCompileInputs.cache
+C:\Users\Tanya\Documents\GitHub\NET.A.2019.Kashkan.04\Day4Tasks\DoubleExtension\obj\Debug\DoubleExtension.dll
+C:\Users\Tanya\Documents\GitHub\NET.A.2019.Kashkan.04\Day4Tasks\DoubleExtension\obj\Debug\DoubleExtension.pdb

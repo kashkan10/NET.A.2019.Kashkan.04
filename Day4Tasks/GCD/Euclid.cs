@@ -13,9 +13,6 @@ namespace GCD
         /// <returns>GCD of numbers</returns>
         public static int GCD(params int[] arr)
         {
-            if (arr.Length == 1)
-                return Math.Abs(arr.First());
-
             for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i] == 0)

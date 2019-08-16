@@ -4,3 +4,9 @@ C:\Users\Tanya\source\repos\Day4Tasks\GCD\obj\Debug\GCD.csprojAssemblyReference.
 C:\Users\Tanya\source\repos\Day4Tasks\GCD\obj\Debug\GCD.csproj.CoreCompileInputs.cache
 C:\Users\Tanya\source\repos\Day4Tasks\GCD\obj\Debug\GCD.dll
 C:\Users\Tanya\source\repos\Day4Tasks\GCD\obj\Debug\GCD.pdb
+C:\Users\Tanya\Documents\GitHub\NET.A.2019.Kashkan.04\Day4Tasks\GCD\bin\Debug\GCD.dll
+C:\Users\Tanya\Documents\GitHub\NET.A.2019.Kashkan.04\Day4Tasks\GCD\bin\Debug\GCD.pdb
+C:\Users\Tanya\Documents\GitHub\NET.A.2019.Kashkan.04\Day4Tasks\GCD\obj\Debug\GCD.csprojAssemblyReference.cache
+C:\Users\Tanya\Documents\GitHub\NET.A.2019.Kashkan.04\Day4Tasks\GCD\obj\Debug\GCD.csproj.CoreCompileInputs.cache
+C:\Users\Tanya\Documents\GitHub\NET.A.2019.Kashkan.04\Day4Tasks\GCD\obj\Debug\GCD.dll
+C:\Users\Tanya\Documents\GitHub\NET.A.2019.Kashkan.04\Day4Tasks\GCD\obj\Debug\GCD.pdb
