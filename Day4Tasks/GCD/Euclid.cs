@@ -19,15 +19,11 @@ namespace GCD
                 {
                     arr[i] = arr.Max();
                 }
+
                 arr[i] = Math.Abs(arr[i]);
             }
 
             int min = arr.Min();
-            if (min == 0)
-            {
-                return 0;
-            }
-
             int count = 0;
             for (int i = 0; i < arr.Length; i++)
             {
